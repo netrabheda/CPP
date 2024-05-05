@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string max(string m, string n) {
+    return (m > n) ? m : n;
+}
+
+string max(string m, string n, string o) {
+    return max(max(m, n), o);
+}
+
+int main() {
+
+    string str1, str2, str3;
+
+      cout << "Enter three strings: ";
+      cin >> str1 >> str2 >> str3;
+
+      cout << "The maximum string is: " << max(str1, str2, str3) << endl;
+
+    return 0;
+}
